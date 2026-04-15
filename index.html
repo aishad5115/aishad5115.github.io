@@ -6,11 +6,161 @@
 -->
 <html>
 	<head>
-		<title>Solid State by HTML5 UP</title>
+		<title>Aisha Dauda's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* VO2 Max Calculator Styling */
+			#calculator {
+				margin: 0 auto;
+				padding: 3em 0;
+				max-width: 55em;
+			}
+
+			#calculator h2 {
+				margin-bottom: 1em;
+			}
+
+			#calculator p {
+				margin-bottom: 2em;
+				line-height: 1.8;
+			}
+
+			.calc-wrapper {
+				background: rgba(255, 255, 255, 0.025);
+				border: solid 2px rgba(255, 255, 255, 0.125);
+				border-radius: 5px;
+				padding: 2em;
+			}
+
+			.calc-row {
+				margin-bottom: 1.5em;
+			}
+
+			.calc-row:last-of-type {
+				margin-bottom: 0;
+			}
+
+			.calc-row label {
+				display: block;
+				color: #ffffff;
+				font-family: Raleway, Helvetica, sans-serif;
+				font-size: 0.8em;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				margin-bottom: 0.5em;
+				text-transform: uppercase;
+			}
+
+			.calc-row input,
+			.calc-row select {
+				width: 100%;
+				padding: 0.75em 1em;
+				background: rgba(255, 255, 255, 0.025);
+				border: solid 2px rgba(255, 255, 255, 0.125);
+				border-radius: 5px;
+				color: #ffffff;
+				font-family: "Source Sans Pro", Helvetica, sans-serif;
+				font-size: 1em;
+				height: 2.75em;
+			}
+
+			.calc-row input:focus,
+			.calc-row select:focus {
+				border-color: #5b6ba6;
+				outline: none;
+			}
+
+			.calc-btn {
+				width: 100%;
+				margin-top: 1.5em;
+				padding: 0 2.25em;
+				height: 3.75em;
+				line-height: 3.75em;
+				background-color: transparent;
+				border-radius: 5px;
+				border: 0;
+				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.125);
+				color: #ffffff !important;
+				cursor: pointer;
+				display: block;
+				font-family: Raleway, Helvetica, sans-serif;
+				font-size: 0.8em;
+				font-weight: 700;
+				letter-spacing: 0.1em;
+				text-align: center;
+				text-decoration: none;
+				text-transform: uppercase;
+				white-space: nowrap;
+				transition: background-color 0.2s ease-in-out;
+			}
+
+			.calc-btn:hover {
+				background-color: rgba(255, 255, 255, 0.025);
+			}
+
+			.calc-btn:active {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+			.calc-result {
+				display: none;
+				margin-top: 2em;
+				padding: 2em;
+				background: rgba(76, 92, 150, 0.15);
+				border: solid 2px rgba(76, 92, 150, 0.25);
+				border-radius: 5px;
+				text-align: center;
+			}
+
+			.result-value {
+				display: block;
+				font-size: 3em;
+				font-weight: 700;
+				color: #ffffff;
+				margin-bottom: 0.5em;
+			}
+
+			.result-label {
+				display: block;
+				font-size: 1em;
+				color: rgba(255, 255, 255, 0.6);
+				margin-bottom: 1em;
+			}
+
+			.result-zone {
+				display: block;
+				font-size: 1.2em;
+				font-weight: 600;
+				color: rgba(91, 107, 166, 1);
+			}
+
+			#calculator-footer-section {
+				background-color: #2e3141;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-size: auto, cover;
+				background-position: center, center;
+				background-attachment: fixed;
+			}
+
+			#calculator-footer-section #footer {
+				background: none;
+				margin-top: 0;
+				padding-top: 0;
+			}
+
+			@media screen and (max-width: 736px) {
+				#calculator {
+					padding: 2em 0;
+				}
+
+				.calc-wrapper {
+					padding: 1.5em;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,33 +169,18 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
+						<h1><a href="index.html">Aisha's Portfolio</a></h1>
+
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
 
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
 							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+							<h2 style="border:0px; padding-bottom: 0px;">Aisha Dauda</h2>
+							<h3 style="border-bottom: solid 2px rgba(255, 255, 255, 0.125); padding-bottom: 10px;"> BSC Kinesiology - Class of 2026</h3>
+							<p>Hi! I'm Aisha Dauda, a fourth year BSC Kinesiology student at the University of Calgary finishing up my Bachelor of Science degree. I have a strong interest in exercise physiology and rehabilitation, particularly in working with older adults to support their recovery and quality of life. This portfolio was built for KNES 381 and brings together the computational and digital skills I developed over the semester. It shows a different side of my kinesiology education, one focused on data, technology and building things from scratch.</p>
 						</div>
 					</section>
 
@@ -55,11 +190,11 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/scratch-logo.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Magna arcu feugiat</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Scratch Maze Project </h2>
+										<p>This is a 3 level maze game built in MIT Scratch where you control a mouse trying to find the cheese using the arrow keys. It has a countdown timer and a lives system so if you run out of either you lose. Each level gets harder with more complex mazes as you progress. There's also an element of added cheat resistance so the sprite can't be dragged and gets sent back to start if it touches a wall. It covers the core programming concepts from class including variables, loops, conditionals and events.</p>
+						<a href="https://scratch.mit.edu/projects/1287384537" target="_blank" class="special">View Project</a>
 									</div>
 								</div>
 							</section>
@@ -67,11 +202,11 @@
 						<!-- Two -->
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/python-logo.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Tempus adipiscing</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">Python Project</h2>
+										<p>This is a project that uses Python in a Kaggle notebook to analyze VO₂ data from an exercise test. VO₂ measures how much oxygen your body uses during exercise and is a key indicator of aerobic fitness. The notebook generates several plots including a main VO₂ plot and gas exchange graphs. It also marks the Gas Exchange Threshold and Respiratory Compensation Point as reference lines. The script is written to be reusable so it can run on a new dataset just by changing the file path.</p>
+						<a href="https://github.com/aishad5115/KNES381/blob/main/knes381-demo2.ipynb" target="_blank" class="special">View Project</a>
 									</div>
 								</div>
 							</section>
@@ -79,95 +214,113 @@
 						<!-- Three -->
 							<section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
+									<a href="#" class="image"><img src="images/gimp-logo.png" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Nullam dignissim</h2>
-										<p>Lorem ipsum dolor sit amet, etiam lorem adipiscing elit. Cras turpis ante, nullam sit amet turpis non, sollicitudin posuere urna. Mauris id tellus arcu. Nunc vehicula id nulla dignissim dapibus. Nullam ultrices, neque et faucibus viverra, ex nulla cursus.</p>
-										<a href="#" class="special">Learn more</a>
+										<h2 class="major">GIMP Photo Editing Project</h2>
+										<p>This is a photo montage made in GIMP using at least four layered images combined into one scene. It shows a woman running from an alien on a city boardwalk at night with a galaxy and planet sky in the background. I used layer masking and blending to merge the images together so they sit in the same scene. The goal wasn't realism, just to practice the editing tools and techniques we learned in class.</p>
+										<a href="images/gimp.png" target="_blank" class="special">View Project</a>
 									</div>
 								</div>
 							</section>
 
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
+							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<h2 class="major">Vitae phasellus</h2>
-									<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
+									<a href="#" class="image"><img src="images/html5-logo.png" alt="" /></a>
+									<div class="content">
+										<h2 class="major">Markdown-HTML Project</h2>
+										<p>This is a structured document built in Markdown and hosted on GitHub that covers the anatomy and function of the heart. It includes a centered title, an image positioned beside text, scientific notation, a cardiac variables table and hyperlinks to other files in the repository. The goal was to learn how to create a clean and technical document using Markdown with some HTML where needed.</p>
+						<a href="https://github.com/aishad5115/KNES381/blob/420b7dbe7e4d0da3fd9875ecc241d273dc1012a5/Markdown-HTML_Assignment.md" target="_blank" class="special">View Project</a>
+									</div>
+								</div>
+							</section>
+						
+
+						<!-- Four -->
+							<section id="four" class="wrapper style1">
+								<div class="inner">
+									<h2 class="major">Summary of Projects</h2>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="image"><img src="images/scratch.png" alt="" /></a>
+											<h3 class="major">Scratch Maze Project</h3>
+											<p>A 3 level maze game with a timer, lives system and cheat resistance.</p>
+								<a href="https://scratch.mit.edu/projects/1287384537" target="_blank" class="special">View Project</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="image"><img src="images/python.png" alt="" /></a>
+											<h3 class="major">Python Project</h3>
+											<p>VO₂ data analysis and gas exchange visualization using Python and Matplotlib.</p>
+								<a href="https://github.com/aishad5115/KNES381/blob/main/knes381-demo2.ipynb" target="_blank" class="special">View Project</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="image"><img src="images/gimp.png" alt="" /></a>
+											<h3 class="major">GIMP Photo Editing Project</h3>
+											<p>A photo montage combining four images into one composite scene.</p>
+											<a href="images/gimp.png" target="_blank" class="special">View Project</a>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="image"><img src="images/html5.png" alt="" /></a>
+											<h3 class="major">Markdown-HTML Project</h3>
+											<p>A structured project about heart anatomy using Markdown and HTML.</p>
+								<a href="https://github.com/aishad5115/KNES381/blob/420b7dbe7e4d0da3fd9875ecc241d273dc1012a5/Markdown-HTML_Assignment.md" target="_blank" class="special">View Project</a>
 										</article>
 									</section>
-									<ul class="actions">
-										<li><a href="#" class="button">Browse All</a></li>
-									</ul>
 								</div>
 							</section>
 
 					</section>
 
+				<!-- Calculator and Footer Section with shared gradient -->
+				<div id="calculator-footer-section">
+					<!-- VO2 Max Calculator -->
+					<article id="calculator">
+					    <h2 class="major">VO₂ Max Calculator</h2>
+					    <p>This is an interactive VO₂ max calculator based on the Rockport Walk Test. Enter your info below to estimate your VO₂ max and see your fitness level.</p>
+					    <div class="calc-wrapper">
+					        <div class="calc-row">
+					            <label>Age (years)</label>
+					            <input type="number" id="calc-age" placeholder="e.g. 22" />
+					        </div>
+					        <div class="calc-row">
+					            <label>Sex</label>
+					            <select id="calc-sex">
+					                <option value="1">Female</option>
+					                <option value="0">Male</option>
+					            </select>
+					        </div>
+					        <div class="calc-row">
+					            <label>Body Weight (kg)</label>
+					            <input type="number" id="calc-weight" placeholder="e.g. 65" />
+					        </div>
+					        <div class="calc-row">
+					            <label>1-Mile Walk Time (minutes)</label>
+					            <input type="number" id="calc-time" placeholder="e.g. 14.5" step="0.1" />
+					        </div>
+					        <div class="calc-row">
+					            <label>Heart Rate at End of Walk (bpm)</label>
+					            <input type="number" id="calc-hr" placeholder="e.g. 130" />
+					        </div>
+					        <button class="calc-btn" onclick="calculateVO2()">Calculate</button>
+					        <div class="calc-result" id="calc-result">
+					            <span class="result-value" id="result-value">--</span>
+					            <span class="result-label">mL/kg/min</span>
+					            <div class="result-zone" id="result-zone"></div>
+					        </div>
+					    </div>
+					</article>
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+							<h2 class="major">Contact Me</h2>
+							
 							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li class="icon solid fa-phone">(403) 615-1301</li>
+								<li class="icon solid fa-envelope"><a href="mailto:aishad5115@gmail.com">aishad5115@gmail.com</a></li>
+
 							</ul>
 						</div>
 					</section>
+				</div>
 
 			</div>
 
@@ -178,6 +331,37 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+		function calculateVO2() {
+		    const age = parseFloat(document.getElementById('calc-age').value);
+		    const sex = parseFloat(document.getElementById('calc-sex').value);
+		    const weight = parseFloat(document.getElementById('calc-weight').value);
+		    const time = parseFloat(document.getElementById('calc-time').value);
+		    const hr = parseFloat(document.getElementById('calc-hr').value);
+		    if (isNaN(age) || isNaN(weight) || isNaN(time) || isNaN(hr)) {
+		        alert('Please fill in all fields!');
+		        return;
+		    }
+		    const weightLbs = weight * 2.20462;
+		    const vo2 = 132.853 - (0.0769 * weightLbs) - (0.3877 * age) + (6.315 * sex) - (3.2649 * time) - (0.1565 * hr);
+		    const vo2rounded = Math.round(vo2 * 10) / 10;
+		    let zone = '';
+		    if (sex === 1) {
+		        if (vo2 < 28) zone = 'Below Average';
+		        else if (vo2 < 34) zone = 'Average';
+		        else if (vo2 < 42) zone = 'Above Average';
+		        else zone = 'Excellent';
+		    } else {
+		        if (vo2 < 35) zone = 'Below Average';
+		        else if (vo2 < 42) zone = 'Average';
+		        else if (vo2 < 50) zone = 'Above Average';
+		        else zone = 'Excellent';
+		    }
+		    document.getElementById('result-value').textContent = vo2rounded;
+		    document.getElementById('result-zone').textContent = 'Fitness Level: ' + zone;
+		    document.getElementById('calc-result').style.display = 'block';
+		}
+		</script>
 
 	</body>
 </html>
